@@ -1,6 +1,6 @@
 def read():
     numbers = []
-    with open("./archivos/numbers2.txt","R") as f:
+    with open("./venv/archivos/numbers2.txt","r", encoding="utf-8") as f:
         for line in f:
             numbers.append(int(line))
     print(numbers)
@@ -13,5 +13,7 @@ def write():
 def run():
     read()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     run()
+
+
